@@ -11,6 +11,7 @@
     <properties>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <functionAppName>func-cursos-mensagens</functionAppName>
     </properties>
 
     <dependencies>
@@ -62,11 +63,11 @@
                 <version>1.22.0</version>
                 <configuration>
                     <resourceGroup>rg-app-function</resourceGroup>
-                    <appName>func-cursos-mensagens</appName>
+                    <appName>${functionAppName}</appName>
                     <region>brazilsouth</region>
                     <runtime>
                         <os>linux</os>
-                        <javaVersion>Java21</javaVersion>
+                        <javaVersion>21</javaVersion>
                     </runtime>
                 </configuration>
             </plugin>
