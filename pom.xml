@@ -55,6 +55,21 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-functions-maven-plugin</artifactId>
+                <version>1.22.0</version>
+                <configuration>
+                    <resourceGroup>rg-app-function</resourceGroup>
+                    <appName>func-cursos-mensagens</appName>
+                    <region>brazilsouth</region>
+                    <runtime>
+                        <os>linux</os>
+                        <javaVersion>Java21</javaVersion>
+                    </runtime>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
